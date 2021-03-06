@@ -1,8 +1,8 @@
 # Project 2 - *Twitter viewer*
 
-*Twitter viewer* is an android app that allows a user to view his Twitter timeline. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
+*Twitter viewer* is an android app that allows a user to view their Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **9** hours spent in total
+Time spent: **16** hours spent in total
 
 ## User Stories
 
@@ -13,6 +13,13 @@ The following **required** functionality is completed:
   - [x] User is displayed the username, name, and body for each tweet
   - [ ] User is displayed the [relative timestamp](https://gist.github.com/nesquena/f786232f5ef72f6e10a7) for each tweet "8m", "7h"
 - [x] User can refresh tweets timeline by pulling down to refresh
+
+- [x] User can **compose and post a new tweet**
+  - [x] User can click a “Compose” icon in the Action Bar on the top right
+  - [x] User can then enter a new tweet and post this to twitter
+  - [x] User is taken back to home timeline with **new tweet visible** in timeline
+  - [ ] Newly created tweet should be manually inserted into the timeline and not rely on a full refresh
+  - [ ] User can **see a counter with total number of characters left for tweet** on compose tweet page
 
 The following **optional** features are implemented:
 
@@ -25,6 +32,16 @@ The following **optional** features are implemented:
 - [ ] User can open the twitter app offline and see last loaded tweets
 - [ ] On the Twitter timeline, leverage the CoordinatorLayout to apply scrolling behavior that hides / shows the toolbar.
 
+- [ ] User is using **"Twitter branded" colors and styles**
+- [ ] User can click links in tweets launch the web browser 
+- [ ] User can **select "reply" from detail view to respond to a tweet**
+- [ ] The "Compose" action is moved to a FloatingActionButton instead of on the AppBar
+- [ ] Compose tweet functionality is build using modal overlay
+- [x] Use Parcelable instead of Serializable using the popular [Parceler library](http://guides.codepath.org/android/Using-Parceler).
+- [ ] User can **open the twitter app offline and see last loaded tweets**. Persisted in SQLite tweets are refreshed on every application launch. While "live data" is displayed when app can get it from Twitter API, it is also saved for use in offline mode.
+- [ ] When a user leaves the compose view without publishing and there is existing text, prompt to save or delete the draft. If saved, the draft should then be **persisted to disk** and can later be resumed from the compose view.
+- [ ] Enable your app to receive implicit intents from other apps. When a link is shared from a web browser, it should pre-fill the text and title of the web page when composing a tweet. 
+
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
@@ -33,7 +50,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='unit-3-part-1-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='unit-3-demo.gif' title='Video Walkthrough 1' width='' alt='Video Walkthrough' />
+<img src='unit-4-demo.gif' title='Video Walkthrough 2' width='' alt='Video Walkthrough' />
 
 ## Notes
 
