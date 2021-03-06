@@ -73,8 +73,9 @@ public class TimelineActivity extends AppCompatActivity {
             // compose icon has been selected
             Toast.makeText(this, "Compose!", Toast.LENGTH_SHORT).show();
             // Navigate to compose activity
-         }
-        return true;
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void populateHomeTimeline() {
